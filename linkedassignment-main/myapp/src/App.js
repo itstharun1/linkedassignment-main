@@ -62,12 +62,14 @@ class App extends Component{
   }
 
   changeImg=()=>{
+  
+
     const{val}=this.state
+
+  
     this.setState({val:!val});
-    const randomNumber = Math.floor(Math.random()*7);
-   
-    const  quote = quotes[randomNumber];
-    this.setState({text:quote.name})
+    
+    this.setState({text:""})
     
   }
   changeImg1=()=>{
@@ -76,7 +78,8 @@ class App extends Component{
     const randomNumber = Math.floor(Math.random()*7);
    
     const  quote = quotes[randomNumber];
-    this.setState({text:quote.name})
+    setTimeout(() => {this.setState({text:quote.name})}, 3000);
+    
 
     new Audio(sound).play()
     
