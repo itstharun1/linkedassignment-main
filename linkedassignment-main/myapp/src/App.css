@@ -26,6 +26,10 @@
   margin: 20px;
   margin-top: 40px;
   font-size: 15px;
+  background-color: pink;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 @media screen and (min-width: 640px){
    
@@ -36,6 +40,6 @@
     width: 10vw;
   }
   .text{
-    font-size: 40px;
+    font-size: 30px;
   }
 }
